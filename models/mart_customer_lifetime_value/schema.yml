@@ -1,0 +1,34 @@
+version: 2
+sources:
+- name: Snowflake
+  database: CANDIDATE_SANDBOX
+  schema: AGREENBURG 
+  loader: S3
+  tables:
+    - name: invoices
+      ext_full_refresh: true
+      description: Customer invoices
+      external:
+      location: "@[INSERT/SPECIFIC_PATH/FIRST_TABLE_PATH/]" ##reference an existing external stage 
+      file_format: >
+        (TYPE = CSV FIELD_OPTIONALLY_ENCLOSED_BY = '"' SKIP_HEADER = 1 TRIM_SPACE = TRUE ESCAPE_UNENCLOSED_FIELD = NONE)
+      columns:
+        - name: [INSERT_NAME_FOR_1st_COLUMN] ## you can input any name
+          data_type: varchar ## best to use varchar for all
+        - name: [INSERT_NAME_FOR_2nd_COLUMN] ## you can input any name
+          data_type: varchar ## best to use varchar for all
+    - name: customers
+      ext_full_refresh: true
+      description: > Write the description of the purpose of table
+      external:
+        location: "@[INSERT/SPECIFIC_PATH/SECOND_TABLE_PATH/]" ##reference an existing external stage 
+      file_format: >
+        (TYPE = CSV FIELD_OPTIONALLY_ENCLOSED_BY = '"' SKIP_HEADER = 1 TRIM_SPACE = TRUE ESCAPE_UNENCLOSED_FIELD = NONE)
+      columns:
+        - name: [INSERT_NAME_FOR_1st_COLUMN] ## you can input any name
+          data_type: varchar ##Highly recommend using varchar for all
+        - name: [INSERT_NAME_FOR_2nd_COLUMN] ## you can input any name
+          data_type: varchar ##Highly recommend using varchar for all
+        - name: [INSERT_NAME_FOR_3rd_COLUMN] ## you can input any name
+          data_type: varchar ##Highly recommend using varchar for all
+view rawgistfile1.txt hosted with ❤ by GitHub
