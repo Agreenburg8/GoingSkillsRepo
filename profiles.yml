@@ -1,0 +1,13 @@
+config:
+  partial_parse: true
+snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: xw69208.us-east-2.aws
+      user: AGREENBURG
+      role: AGREENBURG_ROLE
+      database: CANDIDATE_SANDBOX
+      warehouse: CANDIDATE_WH
+      schema: AGREENBURG

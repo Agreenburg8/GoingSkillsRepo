@@ -1,0 +1,24 @@
+name: "mart_customer_lifetime_value"
+version: "1.0.0"
+config-version: 2
+
+profile: "snowflake"
+
+# model-paths: ["models"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/ directory
+# as tables. These settings can be overridden in the individual model files
+# using the `{{ config(...) }}` macro.
+models:
+  mart_customer_lifetime_value:
+    # Applies to all files under models/example/
+    example:
+      materialized: view
