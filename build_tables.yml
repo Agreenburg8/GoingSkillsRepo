@@ -1,0 +1,35 @@
+version: 2
+sources:
+- name: snowflake
+  database: CANDIDATE_SANDBOX
+  schema: AGREENBURG 
+  loader: S3
+  tables:
+    - name: invoices
+      ext_full_refresh: true
+      description: Customer invoices
+      external:
+      location: "@CANDIDATE_SANDBOX.AGREENBURG.STAGE_INVOICES"
+      file_format: TYPE = CSV 
+      columns:
+        - name: invoice_id 
+          data_type: integer
+        - name: customer_id
+          data_type: integer
+        - name: product_id
+          data_type: integer
+        - name: invoice_date
+          data_type: date
+        - name: amount
+          data_type: integer      
+    - name: customers
+      ext_full_refresh: true
+      description: 
+      external:
+        location: "@CANDIDATE_SANDBOX.AGREENBURG.STAGE_CUSTOMERS"
+      file_format: TYPE = CSV
+      columns:
+        - name: customer_id
+          data_type: integer
+        - name: signup_date
+          data_type: date
