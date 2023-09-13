@@ -1,6 +1,6 @@
 version: 2
 sources:
-- name: Snowflake
+- name: snowflake
   database: CANDIDATE_SANDBOX
   schema: AGREENBURG 
   loader: S3
@@ -9,26 +9,27 @@ sources:
       ext_full_refresh: true
       description: Customer invoices
       external:
-      location: "@going-candidate-data/data_engineer1/invoices.csv" ##reference an existing external stage 
-      file_format: >
-        (TYPE = CSV FIELD_OPTIONALLY_ENCLOSED_BY = '"' SKIP_HEADER = 1 TRIM_SPACE = TRUE ESCAPE_UNENCLOSED_FIELD = NONE)
+      location: "@CANDIDATE_SANDBOX.AGREENBURG.STAGE_INVOICES"
+      file_format: TYPE = CSV 
       columns:
-        - name: [INSERT_NAME_FOR_1st_COLUMN] ## you can input any name
-          data_type: varchar ## best to use varchar for all
-        - name: [INSERT_NAME_FOR_2nd_COLUMN] ## you can input any name
-          data_type: varchar ## best to use varchar for all
+        - name: invoice_id 
+          data_type: integer
+        - name: customer_id
+          data_type: integer
+        - name: product_id
+          data_type: integer
+        - name: invoice_date
+          data_type: date
+        - name: amount
+          data_type: integer      
     - name: customers
       ext_full_refresh: true
       description: 
       external:
-        location: @s3://going-candidate-data/data_engineer1/customers.csv ##reference an existing external stage 
-      file_format: >
-        (TYPE = CSV FIELD_OPTIONALLY_ENCLOSED_BY = '"' SKIP_HEADER = 1 TRIM_SPACE = TRUE ESCAPE_UNENCLOSED_FIELD = NONE)
+        location: "@CANDIDATE_SANDBOX.AGREENBURG.STAGE_CUSTOMERS"
+      file_format: TYPE = CSV
       columns:
-        - name: [INSERT_NAME_FOR_1st_COLUMN] ## you can input any name
-          data_type: varchar ##Highly recommend using varchar for all
-        - name: [INSERT_NAME_FOR_2nd_COLUMN] ## you can input any name
-          data_type: varchar ##Highly recommend using varchar for all
-        - name: [INSERT_NAME_FOR_3rd_COLUMN] ## you can input any name
-          data_type: varchar ##Highly recommend using varchar for all
-view rawgistfile1.txt hosted with ❤ by GitHub
+        - name: customer_id
+          data_type: integer
+        - name: signup_date
+          data_type: date

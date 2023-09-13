@@ -105,3 +105,262 @@ Parsing Error
 [0m12:07:00.483871 [debug] [MainThread]: Command `dbt run` failed at 12:07:00.483720 after 0.38 seconds
 [0m12:07:00.484286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e077550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e3ae3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ddaf8d0>]}
 [0m12:07:00.484750 [debug] [MainThread]: Flushing usage events
+[0m13:45:00.828276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fe5390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108723f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fe7dd0>]}
+
+
+============================== 13:45:00.834960 | d282a8e3-0f35-4bb1-ac8e-ff013b240b2c ==============================
+[0m13:45:00.834960 [info ] [MainThread]: Running with dbt=1.6.2
+[0m13:45:00.835858 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo', 'log_path': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:45:01.419718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd282a8e3-0f35-4bb1-ac8e-ff013b240b2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108dd7150>]}
+[0m13:45:01.427775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd282a8e3-0f35-4bb1-ac8e-ff013b240b2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084426d0>]}
+[0m13:45:01.428744 [info ] [MainThread]: Registered adapter: snowflake=1.6.2
+[0m13:45:01.438657 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 1 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+[0m13:45:01.440603 [debug] [MainThread]: Command `dbt run` failed at 13:45:01.440236 after 0.64 seconds
+[0m13:45:01.441891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10851c890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108147850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108dd7250>]}
+[0m13:45:01.442788 [debug] [MainThread]: Flushing usage events
+[0m13:45:22.584271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6fe950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6fed10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e3a3690>]}
+
+
+============================== 13:45:22.588808 | 63570264-3f14-472a-95ee-489c194d11ef ==============================
+[0m13:45:22.588808 [info ] [MainThread]: Running with dbt=1.6.2
+[0m13:45:22.589486 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:45:22.640742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '63570264-3f14-472a-95ee-489c194d11ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e698550>]}
+[0m13:45:22.642632 [debug] [MainThread]: Set downloads directory='/var/folders/96/n31jpj112vg6p38m3dlwtl300000gn/T/dbt-downloads-_sc0i2rn'
+[0m13:45:22.643231 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m13:45:22.823103 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m13:45:22.826221 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_external_tables.json
+[0m13:45:22.947881 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_external_tables.json 200
+[0m13:45:22.954399 [info ] [MainThread]: Installing dbt-labs/dbt_external_tables
+[0m13:45:23.602769 [info ] [MainThread]: Installed from version 0.8.7
+[0m13:45:23.603407 [info ] [MainThread]: Up to date!
+[0m13:45:23.603972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '63570264-3f14-472a-95ee-489c194d11ef', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e753210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e97ab50>]}
+[0m13:45:23.606804 [debug] [MainThread]: Command `dbt deps` succeeded at 13:45:23.606514 after 1.05 seconds
+[0m13:45:23.607468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e473ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d49990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d49850>]}
+[0m13:45:23.608208 [debug] [MainThread]: Flushing usage events
+[0m13:45:32.589028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10de24f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dcfde10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e02d090>]}
+
+
+============================== 13:45:32.595506 | cbf66fc0-dbb1-49fe-8cde-59a12d88e2df ==============================
+[0m13:45:32.595506 [info ] [MainThread]: Running with dbt=1.6.2
+[0m13:45:32.596292 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m13:45:33.071958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cbf66fc0-dbb1-49fe-8cde-59a12d88e2df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e02aed0>]}
+[0m13:45:33.079139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cbf66fc0-dbb1-49fe-8cde-59a12d88e2df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3c1590>]}
+[0m13:45:33.079945 [info ] [MainThread]: Registered adapter: snowflake=1.6.2
+[0m13:45:33.106768 [debug] [MainThread]: checksum: 8d66c46a7c5c0e5717f369273dbde9db64740684d9ba42e6442c1808d698ae9f, vars: {}, profile: , target: , version: 1.6.2
+[0m13:45:33.108151 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:45:33.108694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cbf66fc0-dbb1-49fe-8cde-59a12d88e2df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e023710>]}
+[0m13:45:33.113445 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading mart_customer_lifetime_value: mart_customer_lifetime_value/schema.yml - Runtime Error
+    Syntax error near line 30
+    ------------------------------
+    27 |       ext_full_refresh: true
+    28 |       description: 
+    29 |       external:
+    30 |         location: @s3://going-candidate-data/data_engineer1/customers.csv 
+    31 |       file_format: TYPE = CSV 
+    32 |       columns:
+    33 |         - name: customer_id
+    
+    Raw Error:
+    ------------------------------
+    while scanning for the next token
+    found character that cannot start any token
+      in "<unicode string>", line 30, column 19
+[0m13:45:33.114465 [debug] [MainThread]: Command `dbt run` failed at 13:45:33.114225 after 0.56 seconds
+[0m13:45:33.114990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4cd050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e023010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e79cf90>]}
+[0m13:45:33.115443 [debug] [MainThread]: Flushing usage events
+[0m13:46:14.951991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dedfdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dedfb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dec4090>]}
+
+
+============================== 13:46:14.956722 | ed467498-4dc7-4adb-9cba-de0b9c954818 ==============================
+[0m13:46:14.956722 [info ] [MainThread]: Running with dbt=1.6.2
+[0m13:46:14.957393 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo', 'log_path': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:46:15.239118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ed467498-4dc7-4adb-9cba-de0b9c954818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dedcb10>]}
+[0m13:46:15.246724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ed467498-4dc7-4adb-9cba-de0b9c954818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1e4c10>]}
+[0m13:46:15.247370 [info ] [MainThread]: Registered adapter: snowflake=1.6.2
+[0m13:46:15.270880 [debug] [MainThread]: checksum: 8d66c46a7c5c0e5717f369273dbde9db64740684d9ba42e6442c1808d698ae9f, vars: {}, profile: , target: , version: 1.6.2
+[0m13:46:15.272028 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:46:15.272539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ed467498-4dc7-4adb-9cba-de0b9c954818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e94c4d0>]}
+[0m13:46:15.276327 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading mart_customer_lifetime_value: mart_customer_lifetime_value/schema.yml - Runtime Error
+    Syntax error near line 30
+    ------------------------------
+    27 |       ext_full_refresh: true
+    28 |       description: 
+    29 |       external:
+    30 |         location: @going-candidate-data/data_engineer1/customers.csv 
+    31 |       file_format: TYPE = CSV 
+    32 |       columns:
+    33 |         - name: customer_id
+    
+    Raw Error:
+    ------------------------------
+    while scanning for the next token
+    found character that cannot start any token
+      in "<unicode string>", line 30, column 19
+[0m13:46:15.277179 [debug] [MainThread]: Command `dbt run` failed at 13:46:15.277026 after 0.35 seconds
+[0m13:46:15.277654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1ca650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1bf9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e8fd810>]}
+[0m13:46:15.278074 [debug] [MainThread]: Flushing usage events
+[0m13:48:36.985112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ababe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abb68d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abb6d90>]}
+
+
+============================== 13:48:36.989645 | 225533e7-5214-486a-9d76-e826dcf315b2 ==============================
+[0m13:48:36.989645 [info ] [MainThread]: Running with dbt=1.6.2
+[0m13:48:36.990292 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo/logs', 'profiles_dir': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:48:37.267379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '225533e7-5214-486a-9d76-e826dcf315b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b2feb10>]}
+[0m13:48:37.274895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '225533e7-5214-486a-9d76-e826dcf315b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b2ada90>]}
+[0m13:48:37.275513 [info ] [MainThread]: Registered adapter: snowflake=1.6.2
+[0m13:48:37.298791 [debug] [MainThread]: checksum: 8d66c46a7c5c0e5717f369273dbde9db64740684d9ba42e6442c1808d698ae9f, vars: {}, profile: , target: , version: 1.6.2
+[0m13:48:37.300081 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:48:37.300848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '225533e7-5214-486a-9d76-e826dcf315b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b302950>]}
+[0m13:48:38.155176 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid sources config given in models/mart_customer_lifetime_value/schema.yml @ sources: {'name': 'Snowflake', 'database': 'CANDIDATE_SANDBOX', 'schema': 'AGREENBURG', 'loader': 'S3', 'tables': [{'name': 'invoices', 'ext_full_refresh': True, 'description': 'Customer invoices', 'external': None, 'location': '@going-candidate-data/data_engineer1/invoices.csv', 'file_format': 'TYPE = CSV', 'columns': [{'name': 'invoice_id', 'data_type': 'varchar'}, {'name': 'customer_id', 'data_type': 'varchar'}, {'name': 'product_id', 'data_type': 'varchar'}, {'name': 'invoice_date', 'data_type': 'varchar'}, {'name': 'amount', 'data_type': 'varchar'}]}, {'name': 'customers', 'ext_full_refresh': True, 'description': None, 'external': {'location': '@going-candidate-data/data_engineer1/customers.csv'}, 'file_format': 'TYPE = CSV', 'columns': [{'name': 'customer_id', 'data_type': 'varchar'}, {'name': 'signup_date', 'data_type': 'varchar'}]}]} - at path ['tables'][1]['description']: None is not of type 'string'
+[0m13:48:38.155976 [debug] [MainThread]: Command `dbt run` failed at 13:48:38.155864 after 1.19 seconds
+[0m13:48:38.156342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105fa3810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3f9950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4a0250>]}
+[0m13:48:38.156803 [debug] [MainThread]: Flushing usage events
+[0m13:49:56.020035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f606250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f227090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f242450>]}
+
+
+============================== 13:49:56.024487 | 87cbb29c-3691-412a-ad5b-28ab71fb501e ==============================
+[0m13:49:56.024487 [info ] [MainThread]: Running with dbt=1.6.2
+[0m13:49:56.025136 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run-operation stage_external_sources', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:49:56.309061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '87cbb29c-3691-412a-ad5b-28ab71fb501e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ff6de50>]}
+[0m13:49:56.316544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '87cbb29c-3691-412a-ad5b-28ab71fb501e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0cf190>]}
+[0m13:49:56.317141 [info ] [MainThread]: Registered adapter: snowflake=1.6.2
+[0m13:49:56.339956 [debug] [MainThread]: checksum: 8d66c46a7c5c0e5717f369273dbde9db64740684d9ba42e6442c1808d698ae9f, vars: {}, profile: , target: , version: 1.6.2
+[0m13:49:56.341254 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:49:56.342241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '87cbb29c-3691-412a-ad5b-28ab71fb501e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f2dfa90>]}
+[0m13:49:57.252314 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid sources config given in models/mart_customer_lifetime_value/schema.yml @ sources: {'name': 'Snowflake', 'database': 'CANDIDATE_SANDBOX', 'schema': 'AGREENBURG', 'loader': 'S3', 'tables': [{'name': 'invoices', 'ext_full_refresh': True, 'description': 'Customer invoices', 'external': None, 'location': '@going-candidate-data/data_engineer1/invoices.csv', 'file_format': 'TYPE = CSV', 'columns': [{'name': 'invoice_id', 'data_type': 'varchar'}, {'name': 'customer_id', 'data_type': 'varchar'}, {'name': 'product_id', 'data_type': 'varchar'}, {'name': 'invoice_date', 'data_type': 'varchar'}, {'name': 'amount', 'data_type': 'varchar'}]}, {'name': 'customers', 'ext_full_refresh': True, 'description': None, 'external': {'location': '@going-candidate-data/data_engineer1/customers.csv'}, 'file_format': 'TYPE = CSV', 'columns': [{'name': 'customer_id', 'data_type': 'varchar'}, {'name': 'signup_date', 'data_type': 'varchar'}]}]} - at path ['tables'][1]['description']: None is not of type 'string'
+[0m13:49:57.253139 [debug] [MainThread]: Command `dbt run-operation` failed at 13:49:57.253021 after 1.26 seconds
+[0m13:49:57.253514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11002a1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f6db710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e75810>]}
+[0m13:49:57.253872 [debug] [MainThread]: Flushing usage events
+[0m13:51:38.930393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10861dcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10883a810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10883ac50>]}
+
+
+============================== 13:51:38.935310 | b153bf62-d90a-4bd6-a118-f2ebbf726470 ==============================
+[0m13:51:38.935310 [info ] [MainThread]: Running with dbt=1.6.2
+[0m13:51:38.936109 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo', 'log_path': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run-operation stage_external_sources', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:51:39.280498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b153bf62-d90a-4bd6-a118-f2ebbf726470', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f84610>]}
+[0m13:51:39.289917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b153bf62-d90a-4bd6-a118-f2ebbf726470', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f83fd0>]}
+[0m13:51:39.290778 [info ] [MainThread]: Registered adapter: snowflake=1.6.2
+[0m13:51:39.315196 [debug] [MainThread]: checksum: 8d66c46a7c5c0e5717f369273dbde9db64740684d9ba42e6442c1808d698ae9f, vars: {}, profile: , target: , version: 1.6.2
+[0m13:51:39.317238 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:51:39.318239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b153bf62-d90a-4bd6-a118-f2ebbf726470', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10887eb10>]}
+[0m13:51:39.321808 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading mart_customer_lifetime_value: mart_customer_lifetime_value/schema.yml - Runtime Error
+    Syntax error near line 12
+    ------------------------------
+    9  |       ext_full_refresh: true
+    10 |       description: Customer invoices
+    11 |       external:
+    12 |       location: @going-candidate-data/data_engineer1/invoices.csv
+    13 |       file_format: TYPE = CSV 
+    14 |       columns:
+    15 |         - name: invoice_id 
+    
+    Raw Error:
+    ------------------------------
+    while scanning for the next token
+    found character that cannot start any token
+      in "<unicode string>", line 12, column 17
+[0m13:51:39.322982 [debug] [MainThread]: Command `dbt run-operation` failed at 13:51:39.322771 after 0.42 seconds
+[0m13:51:39.323549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088354d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108236a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fc56d0>]}
+[0m13:51:39.324043 [debug] [MainThread]: Flushing usage events
+[0m15:04:08.101356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073a1ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107446310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106df5350>]}
+
+
+============================== 15:04:08.106980 | 721e9c9a-7693-4f87-a482-f24b9ae9a2b0 ==============================
+[0m15:04:08.106980 [info ] [MainThread]: Running with dbt=1.6.2
+[0m15:04:08.107799 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run-operation stage_external_source', 'send_anonymous_usage_stats': 'True'}
+[0m15:04:08.564336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '721e9c9a-7693-4f87-a482-f24b9ae9a2b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108089450>]}
+[0m15:04:08.571945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '721e9c9a-7693-4f87-a482-f24b9ae9a2b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062eee10>]}
+[0m15:04:08.572725 [info ] [MainThread]: Registered adapter: snowflake=1.6.2
+[0m15:04:08.597150 [debug] [MainThread]: checksum: 8d66c46a7c5c0e5717f369273dbde9db64740684d9ba42e6442c1808d698ae9f, vars: {}, profile: , target: , version: 1.6.2
+[0m15:04:08.598426 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:04:08.598925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '721e9c9a-7693-4f87-a482-f24b9ae9a2b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107956410>]}
+[0m15:04:09.495716 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid sources config given in models/mart_customer_lifetime_value/schema.yml @ sources: {'name': 'Snowflake', 'database': 'CANDIDATE_SANDBOX', 'schema': 'AGREENBURG', 'loader': 'S3', 'tables': [{'name': 'invoices', 'ext_full_refresh': True, 'description': 'Customer invoices', 'external': None, 'location': '@going-candidate-data/data_engineer1/invoices.csv', 'file_format': 'TYPE = CSV', 'columns': [{'name': 'invoice_id', 'data_type': 'varchar'}, {'name': 'customer_id', 'data_type': 'varchar'}, {'name': 'product_id', 'data_type': 'varchar'}, {'name': 'invoice_date', 'data_type': 'varchar'}, {'name': 'amount', 'data_type': 'varchar'}]}, {'name': 'customers', 'ext_full_refresh': True, 'description': None, 'external': {'location': '@going-candidate-data/data_engineer1/customers.csv'}, 'file_format': '(TYPE = CSV)', 'columns': [{'name': 'customer_id', 'data_type': 'varchar'}, {'name': 'signup_date', 'data_type': 'varchar'}]}]} - at path ['tables'][1]['description']: None is not of type 'string'
+[0m15:04:09.496641 [debug] [MainThread]: Command `dbt run-operation` failed at 15:04:09.496481 after 1.42 seconds
+[0m15:04:09.497082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10794bcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10764da50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078e23d0>]}
+[0m15:04:09.497506 [debug] [MainThread]: Flushing usage events
+[0m15:10:09.620742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fafcd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d34d450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fb6d050>]}
+
+
+============================== 15:10:09.625646 | 9c25040f-7991-4e0a-bfbf-58d91e0586fc ==============================
+[0m15:10:09.625646 [info ] [MainThread]: Running with dbt=1.6.2
+[0m15:10:09.626496 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo/logs', 'debug': 'False', 'profiles_dir': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run-operation stage_external_source', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:10:09.898678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9c25040f-7991-4e0a-bfbf-58d91e0586fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f7ebd50>]}
+[0m15:10:09.906330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9c25040f-7991-4e0a-bfbf-58d91e0586fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1104d2050>]}
+[0m15:10:09.906939 [info ] [MainThread]: Registered adapter: snowflake=1.6.2
+[0m15:10:09.930543 [debug] [MainThread]: checksum: 8d66c46a7c5c0e5717f369273dbde9db64740684d9ba42e6442c1808d698ae9f, vars: {}, profile: , target: , version: 1.6.2
+[0m15:10:09.931943 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:10:09.932806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9c25040f-7991-4e0a-bfbf-58d91e0586fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110531e90>]}
+[0m15:10:10.764609 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid sources config given in models/mart_customer_lifetime_value/schema.yml @ sources: {'name': 'snowflake', 'database': 'CANDIDATE_SANDBOX', 'schema': 'AGREENBURG', 'loader': 'S3', 'tables': [{'name': 'invoices', 'ext_full_refresh': True, 'description': 'Customer invoices', 'external': None, 'location': '@going-candidate-data/data_engineer1/invoices.csv', 'file_format': 'TYPE = CSV', 'columns': [{'name': 'invoice_id', 'data_type': 'varchar'}, {'name': 'customer_id', 'data_type': 'varchar'}, {'name': 'product_id', 'data_type': 'varchar'}, {'name': 'invoice_date', 'data_type': 'varchar'}, {'name': 'amount', 'data_type': 'varchar'}]}, {'name': 'customers', 'ext_full_refresh': True, 'description': None, 'external': {'location': '@going-candidate-data/data_engineer1/customers.csv'}, 'file_format': 'TYPE = CSV', 'columns': [{'name': 'customer_id', 'data_type': 'varchar'}, {'name': 'signup_date', 'data_type': 'varchar'}]}]} - at path ['tables'][1]['description']: None is not of type 'string'
+[0m15:10:10.765353 [debug] [MainThread]: Command `dbt run-operation` failed at 15:10:10.765241 after 1.18 seconds
+[0m15:10:10.765704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f7e9e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1104d8ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1106eead0>]}
+[0m15:10:10.766051 [debug] [MainThread]: Flushing usage events
+[0m15:11:49.660913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c366e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c792610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca0b050>]}
+
+
+============================== 15:11:49.665282 | 16a31fbb-d135-46a6-a1a0-7aa66aa84264 ==============================
+[0m15:11:49.665282 [info ] [MainThread]: Running with dbt=1.6.2
+[0m15:11:49.665938 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo', 'log_path': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run-operation stage_external_source', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:11:49.929804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '16a31fbb-d135-46a6-a1a0-7aa66aa84264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca06050>]}
+[0m15:11:49.936997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '16a31fbb-d135-46a6-a1a0-7aa66aa84264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca06050>]}
+[0m15:11:49.937581 [info ] [MainThread]: Registered adapter: snowflake=1.6.2
+[0m15:11:49.961732 [debug] [MainThread]: checksum: 8d66c46a7c5c0e5717f369273dbde9db64740684d9ba42e6442c1808d698ae9f, vars: {}, profile: , target: , version: 1.6.2
+[0m15:11:49.962928 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:11:49.963506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '16a31fbb-d135-46a6-a1a0-7aa66aa84264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d155dd0>]}
+[0m15:11:51.009357 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid sources config given in models/mart_customer_lifetime_value/schema.yml @ sources: {'name': 'snowflake', 'database': 'CANDIDATE_SANDBOX', 'schema': 'AGREENBURG', 'loader': 'S3', 'tables': [{'name': 'invoices', 'ext_full_refresh': True, 'description': 'Customer invoices', 'external': None, 'location': '@going-candidate-data/data_engineer1/invoices.csv', 'file_format': 'TYPE = CSV', 'columns': [{'name': 'invoice_id', 'data_type': 'integer'}, {'name': 'customer_id', 'data_type': 'integer'}, {'name': 'product_id', 'data_type': 'integer'}, {'name': 'invoice_date', 'data_type': 'date'}, {'name': 'amount', 'data_type': 'integer'}]}, {'name': 'customers', 'ext_full_refresh': True, 'description': None, 'external': {'location': '@going-candidate-data/data_engineer1/customers.csv'}, 'file_format': 'TYPE = CSV', 'columns': [{'name': 'customer_id', 'data_type': 'integer'}, {'name': 'signup_date', 'data_type': 'date'}]}]} - at path ['tables'][1]['description']: None is not of type 'string'
+[0m15:11:51.010176 [debug] [MainThread]: Command `dbt run-operation` failed at 15:11:51.010054 after 1.37 seconds
+[0m15:11:51.010568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca05090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c6f4610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107df5990>]}
+[0m15:11:51.010936 [debug] [MainThread]: Flushing usage events
+[0m15:19:18.669821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f615c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f8c5c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fbf3f90>]}
+
+
+============================== 15:19:18.674718 | 9399a477-ca7d-4084-8c10-2f2dca94a9b4 ==============================
+[0m15:19:18.674718 [info ] [MainThread]: Running with dbt=1.6.2
+[0m15:19:18.675372 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run-operation stage_external_source', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:19:18.968312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9399a477-ca7d-4084-8c10-2f2dca94a9b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102a6a50>]}
+[0m15:19:18.975915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9399a477-ca7d-4084-8c10-2f2dca94a9b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fc11bd0>]}
+[0m15:19:18.976594 [info ] [MainThread]: Registered adapter: snowflake=1.6.2
+[0m15:19:18.999290 [debug] [MainThread]: checksum: 8d66c46a7c5c0e5717f369273dbde9db64740684d9ba42e6442c1808d698ae9f, vars: {}, profile: , target: , version: 1.6.2
+[0m15:19:19.001028 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:19:19.001692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9399a477-ca7d-4084-8c10-2f2dca94a9b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f8f2710>]}
+[0m15:19:19.860279 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid sources config given in models/mart_customer_lifetime_value/schema.yml @ sources: {'name': 'snowflake', 'database': 'CANDIDATE_SANDBOX', 'schema': 'AGREENBURG', 'loader': 'S3', 'tables': [{'name': 'invoices', 'ext_full_refresh': True, 'description': 'Customer invoices', 'external': None, 'location': '@CANDIDATE_SANDBOX.AGREENBURG.GOING_CANDIDATE_STAGE', 'file_format': 'TYPE = CSV', 'columns': [{'name': 'invoice_id', 'data_type': 'integer'}, {'name': 'customer_id', 'data_type': 'integer'}, {'name': 'product_id', 'data_type': 'integer'}, {'name': 'invoice_date', 'data_type': 'date'}, {'name': 'amount', 'data_type': 'integer'}]}, {'name': 'customers', 'ext_full_refresh': True, 'description': None, 'external': {'location': '@CANDIDATE_SANDBOX.AGREENBURG.GOING_CANDIDATE_STAGE'}, 'file_format': 'TYPE = CSV', 'columns': [{'name': 'customer_id', 'data_type': 'integer'}, {'name': 'signup_date', 'data_type': 'date'}]}]} - at path ['tables'][1]['description']: None is not of type 'string'
+[0m15:19:19.861371 [debug] [MainThread]: Command `dbt run-operation` failed at 15:19:19.861214 after 1.22 seconds
+[0m15:19:19.861745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f8f0f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aff4650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f980a90>]}
+[0m15:19:19.862101 [debug] [MainThread]: Flushing usage events
+[0m15:29:42.411910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111735cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111676790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116c7690>]}
+
+
+============================== 15:29:42.416348 | eac66b6f-37d3-483a-b0e6-d6eb4cad42f0 ==============================
+[0m15:29:42.416348 [info ] [MainThread]: Running with dbt=1.6.2
+[0m15:29:42.417010 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo', 'log_path': '/Users/ashtongreenburg/Documents/GitHub/GoingSkillsRepo/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run-operation stage_external_source', 'send_anonymous_usage_stats': 'True'}
+[0m15:29:42.683146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'eac66b6f-37d3-483a-b0e6-d6eb4cad42f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a5b710>]}
+[0m15:29:42.690594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'eac66b6f-37d3-483a-b0e6-d6eb4cad42f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111d0d490>]}
+[0m15:29:42.691201 [info ] [MainThread]: Registered adapter: snowflake=1.6.2
+[0m15:29:42.714616 [debug] [MainThread]: checksum: 8d66c46a7c5c0e5717f369273dbde9db64740684d9ba42e6442c1808d698ae9f, vars: {}, profile: , target: , version: 1.6.2
+[0m15:29:42.716516 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:29:42.717060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'eac66b6f-37d3-483a-b0e6-d6eb4cad42f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1123c57d0>]}
+[0m15:29:43.586588 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid sources config given in models/mart_customer_lifetime_value/schema.yml @ sources: {'name': 'snowflake', 'database': 'CANDIDATE_SANDBOX', 'schema': 'AGREENBURG', 'loader': 'S3', 'tables': [{'name': 'invoices', 'ext_full_refresh': True, 'description': 'Customer invoices', 'external': None, 'location': '@CANDIDATE_SANDBOX.AGREENBURG.STAGE_INVOICES', 'file_format': 'TYPE = CSV', 'columns': [{'name': 'invoice_id', 'data_type': 'integer'}, {'name': 'customer_id', 'data_type': 'integer'}, {'name': 'product_id', 'data_type': 'integer'}, {'name': 'invoice_date', 'data_type': 'date'}, {'name': 'amount', 'data_type': 'integer'}]}, {'name': 'customers', 'ext_full_refresh': True, 'description': None, 'external': {'location': '@CANDIDATE_SANDBOX.AGREENBURG.STAGE_CUSTOMERS'}, 'file_format': 'TYPE = CSV', 'columns': [{'name': 'customer_id', 'data_type': 'integer'}, {'name': 'signup_date', 'data_type': 'date'}]}]} - at path ['tables'][1]['description']: None is not of type 'string'
+[0m15:29:43.587377 [debug] [MainThread]: Command `dbt run-operation` failed at 15:29:43.587259 after 1.20 seconds
+[0m15:29:43.587749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111734090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112432f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11255f990>]}
+[0m15:29:43.588117 [debug] [MainThread]: Flushing usage events
