@@ -1,13 +1,15 @@
 config:
   partial_parse: true
 snowflake:
-  target: dev
   outputs:
     dev:
-      type: snowflake
       account: xw69208.us-east-2.aws
-      user: AGREENBURG
-      role: AGREENBURG_ROLE
       database: CANDIDATE_SANDBOX
-      warehouse: CANDIDATE_WH
+      password: v5W77(ho
+      role: AGREENBURG_ROLE
       schema: AGREENBURG
+      threads: 2
+      type: snowflake
+      user: AGREENBURG
+      warehouse: CANDIDATE_WH
+  target: dev

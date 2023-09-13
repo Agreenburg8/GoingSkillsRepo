@@ -9,7 +9,7 @@ sources:
       ext_full_refresh: true
       description: Customer invoices
       external:
-      location: "@[INSERT/SPECIFIC_PATH/FIRST_TABLE_PATH/]" ##reference an existing external stage 
+      location: "@going-candidate-data/data_engineer1/invoices.csv" ##reference an existing external stage 
       file_format: >
         (TYPE = CSV FIELD_OPTIONALLY_ENCLOSED_BY = '"' SKIP_HEADER = 1 TRIM_SPACE = TRUE ESCAPE_UNENCLOSED_FIELD = NONE)
       columns:
@@ -19,9 +19,9 @@ sources:
           data_type: varchar ## best to use varchar for all
     - name: customers
       ext_full_refresh: true
-      description: > Write the description of the purpose of table
+      description: 
       external:
-        location: "@[INSERT/SPECIFIC_PATH/SECOND_TABLE_PATH/]" ##reference an existing external stage 
+        location: @s3://going-candidate-data/data_engineer1/customers.csv ##reference an existing external stage 
       file_format: >
         (TYPE = CSV FIELD_OPTIONALLY_ENCLOSED_BY = '"' SKIP_HEADER = 1 TRIM_SPACE = TRUE ESCAPE_UNENCLOSED_FIELD = NONE)
       columns:
